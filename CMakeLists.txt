@@ -10,6 +10,8 @@ INCLUDE(cmake/base.cmake)
 INCLUDE(cmake/test.cmake)
 INCLUDE(cmake/python.cmake)
 
+SET(CMAKE_INSTALL_PREFIX "$ENV{HOME}/devel/install" CACHE PATH "Install path prefix")
+
 COMPUTE_PROJECT_ARGS(PROJECT_ARGS LANGUAGES CXX)
 PROJECT(${PROJECT_NAME} ${PROJECT_ARGS})
 
